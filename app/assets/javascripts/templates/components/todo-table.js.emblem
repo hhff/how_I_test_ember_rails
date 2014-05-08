@@ -1,0 +1,13 @@
+table
+  tr
+    th Task
+    th Completed?
+    th Delete Task
+  = each todo in todos
+    tr
+      td.task
+        =todo.title
+      td.completed
+        input.is-completed{action 'updateTodo' todo} type="checkbox" checked=todo.isCompleted
+      td.delete
+        button.delete-button{action 'deleteTodo' todo} Delete Todo

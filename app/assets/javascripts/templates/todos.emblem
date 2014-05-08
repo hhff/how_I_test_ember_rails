@@ -1,0 +1,8 @@
+=input#new-todo-field type="text" value=newTodo
+button#new-todo-button{action 'saveNewTodo' newTodo} Save Todo
+
+hr
+
+.todos
+  = todo-table todos=incomplete deleteTodo='deleteTodo' updateTodo='updateTodo'
+  = todo-table todos=completed deleteTodo='deleteTodo' updateTodo='updateTodo'

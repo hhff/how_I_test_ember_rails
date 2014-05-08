@@ -1,0 +1,4 @@
+#application
+  h1 Ember Tests Application
+
+  outlet
